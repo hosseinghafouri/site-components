@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Site</title>
+</head>
+
+<body>
+
+    <site-header>
+        <h2 slot="title">hossein.tech</h2>
+        <!-- <p slot="job">developer</p> -->
+    </site-header>
+
+    <div class="courses-container">
+
+        <site-course title="Javascript course" cover="img/js.png">
+            <span slot="students">11.225</span>
+            <span slot="teacher">Hossein Ghafouri</span>
+        </site-course>
+
+        <site-course title="NPM course" cover="img/npm.png">
+            <span slot="students">9.225</span>
+            <span slot="teacher">Asad Sadry</span>
+        </site-course>
+
+        <site-course title="React js course" cover="img/reactjs.png">
+            <span slot="students">825</span>
+            <span slot="teacher">Reza Badry</span>
+        </site-course>
+
+
+    </div>
+
+    <script type="module" src="js/main.js"></script>
+</body>
+
+</html>
