@@ -1,15 +1,90 @@
 .header {
-    width: 90%;
-    margin: auto;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    height: 190px;
-    background-color:blueviolet;
-    border-radius: 2rem;
-    color: #FFF;
-}
-
-.header h2 {
+    padding: 1rem 3rem;
+    background-color: blueviolet;
+  }
+  .header h1 {
+    font-size: 1.3rem;
     font-weight: bold;
-}
+    color: #fff;
+  }
+  .header .hamburger-menu {
+    display: none;
+    flex-direction: column;
+  }
+  .header .hamburger-menu span {
+    display: inline-block;
+    width: 20px;
+    height: 3px;
+    margin: 2px;
+    border-radius: 3px;
+    background: #fff;
+  }
+
+  .navbar {
+    display: flex;
+    align-items: center;
+  }
+  .navbar img {
+    width: 40px;
+    border-radius: 50%;
+  }
+  .navbar nav {
+    margin-right: 40px;
+  }
+  .navbar ul {
+    display: flex;
+    list-style: none;
+  }
+  .navbar a {
+    padding: 8px;
+    text-decoration: none;
+    transition: all 0.15s ease-in;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+  }
+  .navbar a:hover {
+    color: #1b1b1b;
+  }
+  @media (max-width: 768px) {
+    .hamburger-menu {
+      display: flex !important;
+    }
+    .navbar {
+      display: none;
+    }
+    .main {
+      flex-direction: column-reverse;
+      margin: 1rem;
+    }
+    .main main {
+      width: calc(100% - 2rem);
+      height: 500px;
+      margin-bottom: 25px;
+    }
+    .main main h2 {
+      font-size: 2rem;
+    }
+    .main aside {
+      width: calc(100% - 2rem);
+      height: 600px;
+    }
+    .cards {
+      grid-template-columns: 1fr;
+      margin: 0 auto;
+    }
+    .fotter {
+      flex-direction: column;
+    }
+    .fotter .summury {
+      width: 100%;
+      margin-bottom: 30px;
+    }
+    .fotter .links {
+      width: 100%;
+      padding: 0;
+    }
+  }
