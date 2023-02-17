@@ -1,48 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/main.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
     <title>Site</title>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <site-header>
-        <span slot="logo_name">Turk Developers</span>
+      <span slot="logo_name">Turk Developers</span>
 
-        <span slot="logo_name">Home</span>
-        <span slot="logo_name">About</span>
-        <span slot="logo_name">Supports</span>
-
+      <span slot="a1">Home</span>
+      <span slot="a2">About</span>
+      <span slot="a3">Supports</span>
     </site-header>
 
-    
-
     <div class="courses-container">
+      <site-course title="Javascript course" cover="img/js.png">
+        <span slot="students">11.225</span>
+        <span slot="teacher">Hossein Ghafouri</span>
+      </site-course>
 
-        <site-course title="Javascript course" cover="img/js.png">
-            <span slot="students">11.225</span>
-            <span slot="teacher">Hossein Ghafouri</span>
-        </site-course>
+      <site-course title="NPM course" cover="img/npm.png">
+        <span slot="students">9.225</span>
+        <span slot="teacher">Asad Sadry</span>
+      </site-course>
 
-        <site-course title="NPM course" cover="img/npm.png">
-            <span slot="students">9.225</span>
-            <span slot="teacher">Asad Sadry</span>
-        </site-course>
+      <site-course title="React js course" cover="img/reactjs.png">
+        <span slot="students">825</span>
+        <span slot="teacher">Reza Badry</span>
+      </site-course>
 
-        <site-course title="React js course" cover="img/reactjs.png">
-            <span slot="students">825</span>
-            <span slot="teacher">Reza Badry</span>
-        </site-course>
+      <site-course title="React js course" cover="img/reactjs.png">
+        <span slot="students">825</span>
+        <span slot="teacher">Reza Badry</span>
+      </site-course>
 
-
+      <site-course title="React js course" cover="img/reactjs.png">
+        <span slot="students">825</span>
+        <span slot="teacher">Reza Badry</span>
+      </site-course>
     </div>
 
-    <script type="module" src="js/main.js"></script>
-</body>
+    <site-fotter description="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem explicabo, maiores error nobis
+    sunt impedit voluptatibus temporibus iure aliquid ullam adipisci pariatur hic ut atque. Amet quod cumque
+    officiis quia!"
+    >
+    <span slot="a1">Privcy</span>
+    <span slot="a2">blog</span>
+    <span slot="a3">connect me</span>
+    </site-fotter>
 
+    <script type="module" src="js/main.js"></script>
+  </body>
 </html>

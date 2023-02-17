@@ -7,9 +7,9 @@ template.innerHTML =`
         <div class="navbar">
             <nav>
                 <ul>
-                    <li><a href="#"><slot name="logo_name"></slot></a></li>
-                    <li><a href="#"><slot name="logo_name"></slot></a></li>
-                    <li><a href="#"><slot name="logo_name"></slot></a></li>
+                    <li><a href="#"><slot name="a1"></slot></a></li>
+                    <li><a href="#"><slot name="a2"></slot></a></li>
+                    <li><a href="#"><slot name="a3"></slot></a></li>
                 </ul>
             </nav>
             <img src="img/turk.png" alt="logo img">

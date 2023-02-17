@@ -1,0 +1,47 @@
+.fotter {
+    display: flex;
+    padding: 2rem 3rem;
+    background: blueviolet;
+    margin-top: 30px;
+  }
+  .fotter .summury {
+    width: 50%;
+  }
+  .fotter .summury p {
+    text-align: justify;
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: #fff;
+  }
+  .fotter .links {
+    padding: 0 5rem;
+  }
+  .fotter .links ul {
+    list-style: none;
+  }
+  .fotter .links a {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 10px;
+    transition: all 0.15s ease-in;
+  }
+  .fotter .links a:hover {
+    color: #1b1b1b;
+  }
+
+  @media (max-width: 768px) {
+    .fotter {
+      flex-direction: column;
+    }
+    .fotter .summury {
+      width: 100%;
+      margin-bottom: 30px;
+    }
+    .fotter .links {
+      width: 100%;
+      padding: 0;
+    }
+  }
