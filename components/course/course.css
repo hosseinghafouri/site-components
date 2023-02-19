@@ -5,9 +5,10 @@
     border-radius: 8px;
     box-shadow: 0 1px 6px #ccc;
     max-width: 400px;
-    align-items: center;
+    /* align-items: center; */
     justify-content: space-around;
     font-family: sans-serif;
+    background-color: #FFF;
 }
 
 .cover {
@@ -31,6 +32,7 @@
 .details .actions button {
     border: none;
     outline: none;
+    border-radius: 8px;
     padding: 8px 22px;
     background-color: blueviolet;
     color: #FFF;
